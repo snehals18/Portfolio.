@@ -53,7 +53,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["Front-End development"],
+        strings: ["Angular Development"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,
@@ -82,23 +82,6 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 // End of Tawk.to Live Chat
 
  // <!-- emailjs to mail contact form data -->
- $("#contact-form").submit(function (event) {
-    //event.preventdefault();
-    
-    event.preventDefault();
-    emailjs.init("tKcnAF73jMw0tRWFB");
-    console.log("form submitted");
-    emailjs.sendForm('service_sxhkdba', 'template_9fbmhxi', '#contact-form')
-        .then(function (response) {
-            console.log('SUCCESS!', response.status, response.text);
-            document.getElementById("contact-form").reset();
-            alert("Form Submitted Successfully");
-        }, function (error) {
-            console.log('FAILED...', error);
-            alert("Form Submission Failed! Try Again");
-        });
-    
-});
 
 
 
