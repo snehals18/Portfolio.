@@ -418,7 +418,7 @@
       <div class="image-box">
         <img draggable="false" src="./assests/images/contact1.png" alt="">
       </div>
-    <form id="contact-form" action=" https://script.google.com/macros/s/AKfycbwp007d6cwg4v_QYVgCwDbmItSZc0LJC-NhaHEloXtJ7sUt1dV-G8Ahtjlk8uPTeQEQ0g/exec" method="post">
+    <form  action=" https://script.google.com/macros/s/AKfycbwp007d6cwg4v_QYVgCwDbmItSZc0LJC-NhaHEloXtJ7sUt1dV-G8Ahtjlk8uPTeQEQ0g/exec" method="post">
       
       <div class="form-group">
         <div class="field">
@@ -439,15 +439,23 @@
         </div>
         </div>
       <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-          <div id="loading" class="hidden">
-            <div class="spinner"></div>
+        <button  onclick="myFunction()">  
+          Submit. <i class="fa fa-paper-plane"></i></button>           
+
+
            
       </div>
     </form>
+
   </div>
   </div>
+
+  <script>
+    function myFunction() {
+      alert("Thank You!");
+    }
+    </script>
+  
 </section>
 
 
